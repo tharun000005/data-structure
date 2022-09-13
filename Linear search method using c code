@@ -1,0 +1,31 @@
+include<stdio.h>
+
+int main()
+{
+	int i,key,A[100],n,flag=0;
+	
+	printf("enter n");
+	scanf("%d",&n);
+	
+	printf("\nEnter the array element");
+	for(i=0;i<n;i++)
+		scanf("%d",&A[i]);
+		
+	printf("\nenter the key element");
+	scanf("%d",&key);
+	
+	for(i=0;i<n;i++)
+	{
+		if(A[i]==key)
+		{
+			flag=1;
+			break;	
+		}		
+	}
+	
+	if(flag==0)
+		printf("\nKey element NOT FOUND");
+	else
+		printf("\nKey element FOUND");
+	return 0;
+}
