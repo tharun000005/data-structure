@@ -1,0 +1,24 @@
+- 👋 Hi, I’m @tharun000005
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me ...
+
+<!---
+tharun000005/tharun000005 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+#include<stdio.h> 
+int main() 
+{ int n1=0,n2=1,n3,i,number;
+printf("Enter the number of elements:"); 
+scanf("%d",&number); 
+printf("\n%d %d",n1,n2);
+ for(i=2;i<number;++i)
+ { 
+n3=n1+n2; 
+printf(" %d",n3); 
+n1=n2; n2=n3; 
+}
+ return 0; 
+ } 
